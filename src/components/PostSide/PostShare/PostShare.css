@@ -64,11 +64,14 @@
     position: relative;
 }
 
+
 .previewImage>svg{
     position: absolute;
     right: 1rem;
     top: 0.5rem;
     cursor: pointer;
+    color: white;
+    background-color: var(--buttonBg);
 }
 
 .previewImage>img{

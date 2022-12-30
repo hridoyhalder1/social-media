@@ -5,7 +5,7 @@ import { FaImage } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
-
+import { HiX } from "react-icons/hi";
 
 const PostShare = () => {
 
@@ -56,9 +56,15 @@ const PostShare = () => {
                         Share
                     </button>
                     <div style={{display: "none"}}>
-                        <input type="file" name="myImage" ref={imageRef} id="" onChange={onImageChange} />
+                        <input type="file" name="myImage" ref={imageRef} onChange={onImageChange} />
                     </div>
                 </div>
+                {image && (
+                    <div className='previewImage'>
+                        <HiX onClick={()=>setImage(null)}></HiX>
+                        <img src={image.image} alt="" />
+                    </div>
+                )}
             </div>
 
         </div>
