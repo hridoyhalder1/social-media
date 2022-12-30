@@ -70,7 +70,7 @@
     right: 1rem;
     top: 0.5rem;
     cursor: pointer;
-    color: white;
+    color: black;
     background-color: var(--buttonBg);
 }
 
